@@ -1,0 +1,10 @@
+extends layout
+
+block title
+  title Showing Product: #{name}
+
+block content
+  h2 #{name}
+  img(src='http://lorempixel.com/300/300/sports')
+  div
+    a(href="/addtocart/#{id}") buy Now!
